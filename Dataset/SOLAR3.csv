@@ -1,8 +1,7 @@
-
 id,municipio,energia_mensual(kw/h),n_horas_dia(h)
-1,"Aguachica",118.63,3.95
+1,Aguachica,118.63,3.95
 2,Apartado,106.83,3.56
-3,"Arauca",96.9,3.23
+"3,Arauca"",96.9,3.23"
 4,Armenia,110.25,3.68
 5,Barrancabermeja,119.64,3.99
 6,Barranquilla,137.5,4.58
@@ -33,7 +32,7 @@ id,municipio,energia_mensual(kw/h),n_horas_dia(h)
 31,Ibague,118.22,3.94
 32,Inirida,93.67,3.12
 33,Ipiales,115.96,3.87
-34,Itagüi,117.47,3.92
+34,Itagui,117.47,3.92
 35,Jamundi,116.54,3.88
 36,La Estrella,117.48,3.92
 37,La Virginia,117.48,3.92
@@ -49,7 +48,7 @@ id,municipio,energia_mensual(kw/h),n_horas_dia(h)
 47,Monteria,120.42,4.01
 48,Mosquera,103.96,3.47
 49,Neiva,120.75,4.03
-50,Ocaña",119.19,3.97
+"50,Ocana"",119.19,3.97"
 51,Palermo,111.32,3.71
 52,Palmira,118.36,3.95
 53,Pasto,113.37,3.78
