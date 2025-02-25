@@ -7,7 +7,7 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import wordnet
 from fastapi import FastAPI, HTTPException, Query
 import numpy as np 
-
+#no lee archivos locales el fastapi
 # Configuración de NLTK
 #nltk.data.path.append('C:\\Users\\USER\\AppData\\Roaming\\nltk_data')
 #nltk.download('punkt')  # Paquete para dividir frases en palabras
@@ -44,7 +44,7 @@ app = FastAPI(title="Cálculo de Paneles Solares", version="1.0.0")
 @app.get("/", tags=['Home'])
 def home():
     return HTMLResponse("<h1>Bienvenido a la API de cálculo de paneles solares</h1>")
-
+    #return TemplateResponse("index.html", {"request": request})
 dataset_list = cargar_dataset()
 # Ruta para obtener el dataset completo
 @app.get("/Dataset/SOLAR3.csv", tags=['SOLAR3'])
