@@ -20,7 +20,7 @@ def cargar_dataset():
 
 
 #municipios_disponibles = dataset['municipio'].unique().tolist()
-    
+ #cargamos con este codigo los dataset para usarlos en la api   
 def cargar_dataset2():
     df1 = pd.read_csv("Dataset/PANELES_CSV.csv", delimiter=";", quotechar='"', on_bad_lines="skip")[['id','panel_solar','potencia','tension','valor']]
     return df1.fillna('') #.to_dict(orient="records")
@@ -84,7 +84,7 @@ def obtener_por_id(id: int):
 
 # Ruta para buscar información por municipio
 @app.get("/calculo_paneles", tags=['Cálculo'])
-def calcular_paneles(
+def chatbot_calcular_paneles(
     consumo: float = Query(..., description="Consumo de energía en kWh"),
     municipio: str = Query(..., description="Seleccione un municipio", enum=municipios_disponibles),
     panel: str = Query(..., description="Seleccione un tipo de panel", enum=paneles)
