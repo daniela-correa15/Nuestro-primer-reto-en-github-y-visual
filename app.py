@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import math
 import numpy as np
-from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import LinearRegression #Para implementar modelos de machine learning (en este caso, regresión lineal).
 from sklearn.model_selection import train_test_split
 
 # Cargar los datasets
@@ -83,11 +83,11 @@ if st.button("Calcular Paneles Solares y Consumo Estimado"):
             consumo_predicho = modelo.predict([[n_horas_dia]])
             
             # Mostrar los resultados
-            st.success(f"Resultados para {municipio}:")
-            st.write(f"**Horas de radiación por día:** {n_horas_dia} horas")
-            st.write(f"**Panel solar seleccionado:** {panel}")
-            st.write(f"**Potencia del panel:** {potw} W")
-            st.write(f"**Consumo mensual ingresado:** {consumo} kWh")
-            st.write(f"**Número de paneles necesarios:** {numero_paneles_redondeado}")
-            st.write(f"**Consumo estimado que pueden cubrir los paneles:** {consumo_estimado:.2f} kWh")
-            st.write(f"**Consumo predicho usando Machine Learning:** {consumo_predicho[0]:.2f} kWh")
+            st.success(f"Resultados para {municipio} 📍🗺️:")
+            st.write(f"**Horas de radiación por día 🕛 :** {n_horas_dia} horas")
+            st.write(f"**Panel solar seleccionado 🏼 :** {panel}")
+            st.write(f"**Potencia del panel⚡️ :** {potw} W")
+            st.write(f"**Consumo mensual ingresado 📑:** {consumo} kWh")
+            st.write(f"**Número de paneles necesarios #️⃣:** {numero_paneles_redondeado}")
+            st.write(f"**Consumo estimado que pueden cubrir los paneles 🤓☝️:** {consumo_estimado:.2f} kWh")
+            st.write(f"**Prediccion del Consumo del municipio usando Machine Learning 🔮:** {consumo_predicho[0]:.2f} kWh")
