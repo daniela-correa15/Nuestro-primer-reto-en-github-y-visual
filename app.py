@@ -41,7 +41,7 @@ def entrenar_modelo():
 modelo = entrenar_modelo()
 
 # Configuración de la interfaz de Streamlit
-st.title("Calculadora de Paneles Solares ☀️")
+st.title("Chatbot: Calculadora de Paneles Solares ☀️")
 st.markdown("""
 Esta aplicación te ayuda a calcular el número de paneles solares necesarios para tu consumo de energía en un municipio específico.
 También utiliza un modelo de machine learning para predecir el consumo de energía basado en las horas de radiación solar.
